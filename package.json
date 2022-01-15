@@ -1,7 +1,11 @@
 {
-  "name": "front",
-  "version": "0.1.0",
+  "name": "mini-inter",
+  "version": "1.0.0",
   "private": true,
+  "repository": "https://github.com/Samuel-Ricardo/mini-inter-site.git",
+  "author": "Samuel_Ricardo <samuelricardoofficial@gmail.com>",
+  "license": "GPL-3.0 License",
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
