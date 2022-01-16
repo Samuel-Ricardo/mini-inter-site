@@ -8,6 +8,7 @@ declare module 'styled-components' {
       TERTIARY: string,
       BACKGROUND: string,
       BACKGROUND_LIGHT: string,
+      H2: string,
       RED: string,
       GREEN: string
     }
