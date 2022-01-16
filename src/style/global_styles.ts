@@ -7,4 +7,8 @@ const global_style = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
   }
+
+  body {
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND};
+  }
 `
