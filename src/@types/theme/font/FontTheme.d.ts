@@ -1,5 +1,5 @@
 declare module '@Types/theme/font' {
-  export interface TextTheme {
+  export interface FontTheme {
     FONT_FAMILY: string,
     H1:TextTheme,
     H2:TextTheme,
