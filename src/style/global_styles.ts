@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { themes } from "./themes";
 
 const global_style = createGlobalStyle`
   *{
@@ -28,4 +29,10 @@ const global_style = createGlobalStyle`
       filter: opacity(0.8);
     }
   }
+
+  .primary-color{
+    color: ${({theme}) => theme.COLORS.PRIMARY}
+  }
+
+
 `
