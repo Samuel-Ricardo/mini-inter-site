@@ -1,6 +1,7 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+import FORM_STYLE from './form_style';
 
-const global_style = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   *{
     padding: 0;
     margin: 0;
@@ -51,4 +52,9 @@ const global_style = createGlobalStyle`
     line-height: 47pt;
   }
 `
-export default global_style;
+export default GlobalStyle;
+
+export const global_style = {
+  FORM_STYLE: {...FORM_STYLE}
+
+}
