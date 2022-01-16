@@ -41,7 +41,14 @@ const global_style = createGlobalStyle`
   h2 {
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 28px;
+    line-height: 28pt;
     color: ${({theme}) => theme.COLORS.H2};
+  }
+
+  .wallet{
+    font-weight: 500;
+    color: ${({ theme }) => theme.COLORS.PRIMARY};
+    font-size: 2.5rem; //~40px
+    line-height: 47pt;
   }
 `
