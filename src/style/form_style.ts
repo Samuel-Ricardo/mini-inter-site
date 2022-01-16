@@ -11,4 +11,8 @@ export const Wrapper = styled.main`
   justify-content: center;
 `;
 
+const form_style = {
+  Wrapper
+}
 
+export default form_style;
