@@ -37,4 +37,11 @@ const global_style = createGlobalStyle`
   .bold{
     font-weight: 700;
   }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: ${({theme}) => theme.COLORS.H2};
+  }
 `
