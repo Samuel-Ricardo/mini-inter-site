@@ -16,5 +16,7 @@ const global_style = createGlobalStyle`
     font-family: Roboto , 'sans-serif';
   }
 
-
+  input:focus, textarea:focus, select:focus{
+    outline:none;
+  }
 `
