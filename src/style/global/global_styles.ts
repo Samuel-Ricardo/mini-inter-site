@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import FORM_STYLE from './form_style';
+import FORM_STYLE from '../form_style';
 
 const GlobalStyle = createGlobalStyle`
   *{
