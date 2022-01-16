@@ -19,4 +19,13 @@ const global_style = createGlobalStyle`
   input:focus, textarea:focus, select:focus{
     outline:none;
   }
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.COLORS.PRIMARY};
+
+    &:hover {
+      filter: opacity(0.8);
+    }
+  }
 `
