@@ -1,3 +1,4 @@
+import { FontTheme } from '@Types/theme/font';
 import 'styled-components';
 
 declare module 'styled-components' {
@@ -11,6 +12,8 @@ declare module 'styled-components' {
       H2: string,
       RED: string,
       GREEN: string
-    }
+    },
+
+    FONT:FontTheme
   }
 }
