@@ -26,6 +26,12 @@ export const Background = styled.div<{ image: any }>`
   z-index: 1;
 `;
 
+export const InputContainer = styled.div`
+  flex: 1;
+  width: 90%;
+  margin-top: 67px;
+`;
+
 const form_style = {
   Wrapper,
   Background
