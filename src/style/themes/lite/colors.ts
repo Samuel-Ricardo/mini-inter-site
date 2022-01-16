@@ -1,6 +1,6 @@
 import { global_colors } from "../../global/global_colors"
 
-export const colors = {
+export const lite_colors = {
   ...global_colors,
 
     PRIMARY: "#FB6910",
