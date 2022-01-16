@@ -34,5 +34,7 @@ const global_style = createGlobalStyle`
     color: ${({theme}) => theme.COLORS.PRIMARY}
   }
 
-
+  .bold{
+    font-weight: 700;
+  }
 `
