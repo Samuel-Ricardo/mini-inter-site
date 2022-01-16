@@ -11,4 +11,10 @@ const global_style = createGlobalStyle`
   body {
     background-color: ${({theme}) => theme.COLORS.BACKGROUND};
   }
+
+  input, button, textarea, select {
+    font-family: Roboto , 'sans-serif';
+  }
+
+
 `
