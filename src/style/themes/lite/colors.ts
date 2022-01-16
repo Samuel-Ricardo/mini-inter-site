@@ -1,4 +1,4 @@
-import { global_colors } from "../../global_colors"
+import { global_colors } from "../../global/global_colors"
 
 export const colors = {
   ...global_colors,
