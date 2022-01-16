@@ -56,7 +56,9 @@ export const ButtonContainer = styled.div`
 
 const form_style = {
   Wrapper,
-  Background
+  Background,
+  InputContainer,
+  ButtonContainer
 }
 
 export default form_style;
