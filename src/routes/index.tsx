@@ -4,12 +4,12 @@ import {
   Route
 } from 'react-router-dom';
 import SingIn from '../Pages/SingnIn';
-import { LoginRoutes } from './login';
 
 export const Router = () => (
   <BrowserRouter>
     <Routes>
-      <Route path='/' element={<LoginRoutes/>}/>
+      <Route path='/' element={<SingIn/>} />
+      <Route path='/login' element={<SingIn/>} />
     </Routes>
   </BrowserRouter>
 )

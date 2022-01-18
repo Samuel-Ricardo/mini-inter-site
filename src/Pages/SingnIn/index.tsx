@@ -5,6 +5,7 @@ import background_image from '../../assets/images/background-login.jpg';
 import Inter_logo from '../../assets/images/Inter-orange.png';
 
 const SingIn = () => {
+
   const navigate = useNavigate();
 
   const handleToSingIn = () => { navigate('/dashboard') };
