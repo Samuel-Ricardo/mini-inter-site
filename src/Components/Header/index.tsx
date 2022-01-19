@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { app_images } from "../../config/app_images";
 import { routes } from "../../config/routes";
+import { app_classes } from "../../config/style_classes";
 import UserCircle from "../UserCircle";
 import { HeaderContainer, HeaderWrapper, UserInfo } from "./style";
 
@@ -9,6 +10,8 @@ const Header = () => {
 
   const handleLogoff = () => { navigate(routes.SINGIN) }
 
+  const {BOLD, PRIMARY_COLOR} = app_classes;
+
   return (
     <HeaderContainer>
       <HeaderWrapper>
@@ -16,7 +19,7 @@ const Header = () => {
         <UserInfo>
         <UserCircle initials="SR" />
         <div>
-          <p>Olá, <span className="primary-color font-bold">Pablo</span></p>
+          <p>Olá, <span className={`${PRIMARY_COLOR} ${BOLD}`}>Pablo</span></p>
           <strong>22001123-1</strong><br />
           <a href="#" onClick={handleLogoff}>Sair</a>
         </div>
