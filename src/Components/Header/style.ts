@@ -10,3 +10,13 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: center;
 `
+
+export const HeaderWrapper = styled.div`
+
+  width: 80%;
+  height: 90pt;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
