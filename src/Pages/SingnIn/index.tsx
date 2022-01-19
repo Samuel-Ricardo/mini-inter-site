@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { singin_style } from "./style";
 
-import background_image from '../../assets/images/background-login.jpg';
-import Inter_logo from '../../assets/images/Inter-orange.png';
+import { app_images } from "../../config/app_images";
 
 const SingIn = () => {
 
   const navigate = useNavigate();
 
   const handleToSingIn = () => { navigate('/dashboard') };
+
+  const { Inter_logo, background_image } = app_images;
 
   const {
     Wrapper,
@@ -19,7 +20,7 @@ const SingIn = () => {
 
   return (
     <Wrapper>
-      <Background image={background_image}>
+      <Background image={Background}>
         Mike assausque
       </Background>
     </Wrapper>
