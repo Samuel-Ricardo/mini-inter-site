@@ -56,5 +56,4 @@ export default GlobalStyle;
 
 export const global_style = {
   FORM_STYLE: {...FORM_STYLE}
-
 }

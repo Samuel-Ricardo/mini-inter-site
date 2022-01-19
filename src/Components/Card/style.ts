@@ -11,8 +11,8 @@ export const CardContainer = styled.div<{
 
   background: ${({ theme }) => theme.COLORS.BACKGROUND};
 
-  ${props => props.shadow && css`
-      box-shadow: 5pt 4pt 6pt rgba(0, 0, 0, 0.25)`
+  ${props => props.shadow === true && css`
+      box-shadow: 5pt 4pt 6pt rgba(0, 0, 0, 1)`
   }
 
   border-radius: 20pt;
