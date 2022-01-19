@@ -20,3 +20,8 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 `
+export const UserInfo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
