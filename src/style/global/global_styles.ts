@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle`
 `
 export default GlobalStyle;
 
+export const global_classes = {
+  PRIMARY_COLOR: 'primary-color',
+  BOLD: 'bold',
+  WALLET: 'wallet'
+}
+
 export const global_style = {
   FORM_STYLE: {...FORM_STYLE}
 }
