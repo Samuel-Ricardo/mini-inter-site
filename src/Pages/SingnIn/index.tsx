@@ -25,8 +25,9 @@ const SingIn = () => {
 
   return (
     <Wrapper>
-      <Background image={Background}>
-        <Card width="403pt" height='auto'>
+      <Background image={background_image}/>
+
+      <Card width="403pt" height='auto'>
           <img src={Inter_logo} width={172} height={61} alt="inter logo" />
 
           <InputContainer>
@@ -38,9 +39,8 @@ const SingIn = () => {
             <Button type="button" onClick={handleToSingIn}>Entrar</Button>
             <p>Ainda não tem cadastro? <Link to={routes.SIGNUP}>Cadastre-se Já ;)</Link> </p>
           </ButtonContainer>
-        </Card>
-        Mike assausque
-      </Background>
+      </Card>
+
     </Wrapper>
   )
 }
