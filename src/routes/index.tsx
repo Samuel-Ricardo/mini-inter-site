@@ -6,7 +6,7 @@ import {
 import { routes } from '../config/routes';
 import SingIn from '../Pages/SingnIn';
 
-const {LOGIN,  ROOT, SINGIN} = routes;
+const {LOGIN,  ROOT, SIGNIN: SINGIN} = routes;
 
 export const Router = () => {
   return (

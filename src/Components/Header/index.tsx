@@ -8,7 +8,7 @@ import { HeaderContainer, HeaderWrapper, UserInfo } from "./style";
 const Header = () => {
   const navigate = useNavigate();
 
-  const handleLogoff = () => { navigate(routes.SINGIN) }
+  const handleLogoff = () => { navigate(routes.SIGNIN) }
 
   const {BOLD, PRIMARY_COLOR} = app_classes;
 
