@@ -1,6 +1,6 @@
 import { statement } from "@Types/models";
-import { app_classes } from "../../../config/style_classes";
-import { StatementItemContainer, StatementItemImage, StatementItemInfo } from "./style";
+import { app_classes } from "../../../../config/style_classes";
+import { StatementItemContainer, StatementItemImage, StatementItemInfo } from "../style";
 
 const StatementItem = ({type, updatedAt, user, value}: statement) => {
   return (
