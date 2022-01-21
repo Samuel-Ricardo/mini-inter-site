@@ -3,17 +3,23 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import { routes } from '../config/routes';
-import SingIn from '../Pages/SingnIn';
 
-const {LOGIN,  ROOT, SIGNIN: SINGIN} = routes;
+import { routes } from '../config/routes';
+
+import SingIn from '../Pages/SingnIn';
+import SignUp from '../Pages/SingnUp';
+
+const {LOGIN,  ROOT, SIGNIN: SINGIN, DASHBOARD, SIGNUP} = routes;
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={ROOT} element={<SingIn />} />
+
         <Route path={LOGIN} element={<SingIn />} />
+        <Route path={SIGNUP} element={<SignUp />} />
+
       </Routes>
     </BrowserRouter>
   )
