@@ -9,7 +9,7 @@ import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from
 const Dashboard = () => {
 
   const wallet = 1000.00;
-  const {H2, WALLET} = app_classes;
+  const {H2, WALLET, BOLD, PRIMARY_COLOR} = app_classes;
 
   return (
     <DashboardBackground>
@@ -35,8 +35,19 @@ const Dashboard = () => {
               <Input style={{ flex: 1 }} />
               <Button>Gerar Código</Button>
             </InlineContainer>
-          </Card>
 
+            <p className={PRIMARY_COLOR}>Pix copia e cola:</p>
+            <p className={PRIMARY_COLOR}>asd10asd1asd1as4d1asd4</p>
+          </Card>
+          <Card shadow={false} width="90%">
+            <InlineTitle>
+              <h2 className={H2}>Pagar PIX</h2>
+            </InlineTitle>
+            <InlineContainer>
+              <Input style={{ flex: 1 }} />
+              <Button>Pagar PIX</Button>
+            </InlineContainer>
+          </Card>
         </div>
       </BodyContainer>
     </DashboardBackground>
