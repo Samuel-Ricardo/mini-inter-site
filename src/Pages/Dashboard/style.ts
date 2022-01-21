@@ -32,4 +32,9 @@ export const BodyContainer = styled.main`
       justify-content: flex-end;
     }
   }
+`;
+
+export const InlineTitle = styled.div`
+  display: flex;
+  flex: 100%;
 `
