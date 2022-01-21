@@ -1,10 +1,9 @@
+import { login_routes } from "./login_routes";
+
 export const routes = {
   ROOT: '/',
 
-  SIGNIN: '/signin',
-  SIGNUP: '/signup',
-
-  LOGIN: '/login',
+  LOGIN_ROUTES: {...login_routes},
 
   DASHBOARD: '/dashboard'
 }
