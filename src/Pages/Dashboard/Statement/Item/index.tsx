@@ -5,6 +5,7 @@ import {FiDollarSign} from 'react-icons/fi'
 
 import { StatementItemContainer, StatementItemImage, StatementItemInfo } from "./style";
 import { format } from "date-fns";
+import { formatMoney } from "../../../../utils";
 
 const StatementItem = ({type, updatedAt, user, value}: statement) => {
   return (
@@ -14,7 +15,7 @@ const StatementItem = ({type, updatedAt, user, value}: statement) => {
       </StatementItemImage>
       <StatementItemInfo>
         <p className={app_classes.PRIMARY_COLOR}>
-          {value.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}
+          {formatMoney(value)}
         </p>
         <p>{type === 'pay' ? `Pago a` : `Recebido de`} <strong>{user.first_name} {user.last_name}</strong> </p>
         <p>{format(updatedAt, "dd/MM/yyyy ' às ' HH:mm'h'")}</p>
