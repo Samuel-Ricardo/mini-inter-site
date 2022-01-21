@@ -11,3 +11,25 @@ export const DashboardBackground = styled.main`
 
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_LIGHT};
 `;
+
+export const BodyContainer = styled.main`
+
+  width: 80%;
+  margin-top: 40pt;
+
+  display: flex;
+  justify-content: space-between;
+
+  > div{
+    flex:1;
+
+    & > div {
+      margin-bottom: 20pt;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+`
