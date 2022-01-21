@@ -3,7 +3,7 @@ import { app_classes } from "../../../../config/style_classes";
 
 import {FiDollarSign} from 'react-icons/fi'
 
-import { StatementItemContainer, StatementItemImage, StatementItemInfo } from "../style";
+import { StatementItemContainer, StatementItemImage, StatementItemInfo } from "./style";
 import { format } from "date-fns";
 
 const StatementItem = ({type, updatedAt, user, value}: statement) => {
