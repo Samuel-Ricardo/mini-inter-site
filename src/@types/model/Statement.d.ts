@@ -1,5 +1,5 @@
 declare module '@Types/models' {
-  export interface Statement {
+  export interface statement {
     user: {
       first_name: string,
       last_name: string
