@@ -38,3 +38,18 @@ export const InlineTitle = styled.div`
   display: flex;
   flex: 100%;
 `
+
+export const InlineContainer = styled.div`
+  display: flex;
+  margin-top:20pt;
+  width: 100%;
+
+  div{
+    flex: 4;
+    margin-right: 20pt;
+  }
+
+  button{
+    flex: 1;
+  }
+`;
