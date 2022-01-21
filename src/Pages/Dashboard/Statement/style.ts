@@ -7,3 +7,8 @@ export const StatementContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 `;
+
+export const StatementItemContainer = styled.div`
+    display: flex;
+    width: 100%;
+`
