@@ -12,3 +12,7 @@ export const StatementItemContainer = styled.div`
     display: flex;
     width: 100%;
 `
+
+export const StatementItemInfo = styled.div`
+    p{ margin-bottom: 2px; }
+`
