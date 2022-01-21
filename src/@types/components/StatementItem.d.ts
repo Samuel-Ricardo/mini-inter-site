@@ -1,5 +1,5 @@
 declare module '@Types/components/props' {
-  export interface StatementItemProps {
+  export interface Statement {
     user: {
       first_name: string,
       last_name: string
