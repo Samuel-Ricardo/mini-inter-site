@@ -6,7 +6,9 @@ import Card from "../../Components/Card";
 import Input from "../../Components/Input";
 
 import { app_images } from "../../config/app_images";
+
 import { routes } from "../../config/routes/routes";
+import { login_routes } from "../../config/routes/login_routes";
 
 import { signup_style } from "./style";
 
@@ -43,7 +45,7 @@ const SignUp = () => {
 
         <ButtonContainer>
           <Button type="button" onClick={handleToDashboard}>CADASTRE-SE</Button>
-          <p>Já tem uma conta? <Link to={routes.SIGNIN}>Entre já</Link></p>
+          <p>Já tem uma conta? <Link to={login_routes.LOGIN}>Entre já</Link></p>
         </ButtonContainer>
 
       </Card>

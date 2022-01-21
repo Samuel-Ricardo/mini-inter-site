@@ -9,7 +9,8 @@ import { routes } from '../config/routes/routes';
 import SingIn from '../Pages/SingnIn';
 import SignUp from '../Pages/SingnUp';
 
-const {LOGIN,  ROOT, SIGNIN: SINGIN, DASHBOARD, SIGNUP} = routes;
+const { DASHBOARD, LOGIN_ROUTES, ROOT } = routes;
+const {LOGIN, SIGNIN, SIGNUP} = LOGIN_ROUTES;
 
 export const Router = () => {
   return (

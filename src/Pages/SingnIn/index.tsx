@@ -6,7 +6,7 @@ import Card from "../../Components/Card";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 import { Link } from "react-router-dom";
-import { routes } from "../../config/routes/routes";
+import { login_routes } from "../../config/routes/login_routes";
 
 const SingIn = () => {
 
@@ -37,7 +37,7 @@ const SingIn = () => {
 
           <ButtonContainer>
             <Button type="button" onClick={handleToSingIn}>Entrar</Button>
-            <p>Ainda não tem cadastro? <Link to={routes.SIGNUP}>cadastre-se já</Link> </p>
+            <p>Ainda não tem cadastro? <Link to={login_routes.SIGNUP}>cadastre-se já</Link> </p>
           </ButtonContainer>
       </Card>
 
