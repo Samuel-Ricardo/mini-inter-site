@@ -6,7 +6,7 @@ import Card from "../../Components/Card";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 import { Link } from "react-router-dom";
-import { routes } from "../../config/routes";
+import { routes } from "../../config/routes/routes";
 
 const SingIn = () => {
 

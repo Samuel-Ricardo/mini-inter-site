@@ -6,7 +6,7 @@ import Card from "../../Components/Card";
 import Input from "../../Components/Input";
 
 import { app_images } from "../../config/app_images";
-import { routes } from "../../config/routes";
+import { routes } from "../../config/routes/routes";
 
 import { signup_style } from "./style";
 

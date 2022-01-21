@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { app_images } from "../../config/app_images";
-import { routes } from "../../config/routes";
+import { routes } from "../../config/routes/routes";
 import { app_classes } from "../../config/style_classes";
 import UserCircle from "../UserCircle";
 import { HeaderContainer, HeaderWrapper, UserInfo } from "./style";

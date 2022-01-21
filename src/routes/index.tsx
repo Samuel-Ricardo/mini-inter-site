@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import { routes } from '../config/routes';
+import { routes } from '../config/routes/routes';
 
 import SingIn from '../Pages/SingnIn';
 import SignUp from '../Pages/SingnUp';
