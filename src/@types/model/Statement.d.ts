@@ -1,4 +1,4 @@
-declare module '@Types/components/props' {
+declare module '@Types/models' {
   export interface Statement {
     user: {
       first_name: string,
