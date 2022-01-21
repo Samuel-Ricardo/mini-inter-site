@@ -27,6 +27,15 @@ const Dashboard = () => {
               </h3>
             </InlineContainer>
           </Card>
+          <Card shadow={false} width="90%">
+            <InlineTitle>
+              <h2 className={H2}>Receber PIX</h2>
+            </InlineTitle>
+            <InlineContainer>
+              <Input style={{ flex: 1 }} />
+              <Button>Gerar Código</Button>
+            </InlineContainer>
+          </Card>
 
         </div>
       </BodyContainer>
