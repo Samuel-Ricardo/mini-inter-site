@@ -4,10 +4,13 @@ export const CardContainer = styled.div<{
   width: string;
   heigth: string;
   shadow: boolean;
+  margin: string;
 }>`
 
   width: ${({ width }) => width};
   height: ${(props) => props.heigth};
+  margin-top: ${({ margin: marginTop }) => marginTop};
+
 
   background: ${({ theme }) => theme.COLORS.BACKGROUND};
 
@@ -17,7 +20,7 @@ export const CardContainer = styled.div<{
 
   border-radius: 20pt;
 
-  padding: 20pt;
+  padding: 18pt;
 
   display: flex;
   align-items: center;
@@ -25,3 +28,4 @@ export const CardContainer = styled.div<{
 
   z-index: 5000;
 `
+//margin-bottom: ${({ margin: marginBottom }) => marginBottom};

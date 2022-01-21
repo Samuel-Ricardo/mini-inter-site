@@ -30,7 +30,7 @@ const SignUp = () => {
   return (
     <Wrapper>
       <Background image={app_images.background_image}/>
-      <Card width="403pt">
+      <Card width="403pt" margin="10%">
         <img src={app_images.Inter_logo} width={172} height={61} alt="logo inter" />
 
         <InputContainer>
