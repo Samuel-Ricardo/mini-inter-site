@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 700;
   }
 
-  h2 {
+  .h2 {
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 28pt;
@@ -57,7 +57,8 @@ export default GlobalStyle;
 export const global_classes = {
   PRIMARY_COLOR: 'primary-color',
   BOLD: 'bold',
-  WALLET: 'wallet'
+  WALLET: 'wallet',
+  H2: 'h2'
 }
 
 export const global_style = {
