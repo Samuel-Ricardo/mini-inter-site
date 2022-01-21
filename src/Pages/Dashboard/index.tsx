@@ -17,6 +17,16 @@ const Dashboard = () => {
 
       <BodyContainer>
         <div>
+        <Card shadow={false} width="90%">
+            <InlineTitle>
+              <h2 className={H2}>Saldo Atual</h2>
+            </InlineTitle>
+            <InlineContainer>
+              <h3 className={WALLET}>
+                {formatMoney(wallet)}
+              </h3>
+            </InlineContainer>
+          </Card>
 
         </div>
       </BodyContainer>
