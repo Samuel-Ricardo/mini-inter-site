@@ -27,7 +27,7 @@ const SingIn = () => {
     <Wrapper>
       <Background image={background_image}/>
 
-      <Card width="403pt" height='auto'>
+      <Card width="403pt">
           <img src={Inter_logo} width={172} height={61} alt="inter logo" />
 
           <InputContainer>
@@ -37,7 +37,7 @@ const SingIn = () => {
 
           <ButtonContainer>
             <Button type="button" onClick={handleToSingIn}>Entrar</Button>
-            <p>Ainda não tem cadastro? <Link to={routes.SIGNUP}>Cadastre-se Já ;)</Link> </p>
+            <p>Ainda não tem cadastro? <Link to={routes.SIGNUP}>cadastre-se já</Link> </p>
           </ButtonContainer>
       </Card>
 
