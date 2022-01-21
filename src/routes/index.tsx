@@ -20,6 +20,7 @@ export const Router = () => {
         <Route path={LOGIN} element={<SingIn />} />
         <Route path={SIGNUP} element={<SignUp />} />
 
+        <Route path={DASHBOARD} />
       </Routes>
     </BrowserRouter>
   )
