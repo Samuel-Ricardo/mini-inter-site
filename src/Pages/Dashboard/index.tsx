@@ -10,8 +10,9 @@ import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from
 
 const Dashboard = () => {
 
+  const {user} = useAuth();
 
-  const wallet = 1000.00;
+  const wallet = user.wallet;
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
 
