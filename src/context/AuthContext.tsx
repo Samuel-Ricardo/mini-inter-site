@@ -24,7 +24,7 @@ export const AuthContext = createContext<ContextData>({} as ContextData);
 
 export const AuthProvider: React.FC = ({ children }) => {
 
-  const [user, setUser] = useState<ContextData>({} as ContextData);
+  const [user, setUser] = useState<UserDTO>({} as UserDTO);
 
   const getCurrentUser = async () => {
     const { data } = await me();
@@ -49,7 +49,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   }
 
   return (
-    <AuthContext.Provider value={user}>
+    <AuthContext.Provider value={{user, userSignIn, userSignUp, getCurrentUser}}>
       {children}
     </AuthContext.Provider>
   )
