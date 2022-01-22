@@ -1,14 +1,24 @@
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { singin_style } from "./style";
 
-import { app_images } from "../../config/app_images";
 import Card from "../../Components/Card";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
-import { Link } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
+
+import { app_images } from "../../config/app_images";
 import { login_routes } from "../../config/routes/login_routes";
+import useAuth from "../../hooks/useAuth";
 
 const SingIn = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const {userSignIn} = useAuth();
 
   const navigate = useNavigate();
 
@@ -31,8 +41,8 @@ const SingIn = () => {
           <img src={Inter_logo} width={172} height={61} alt="inter logo" />
 
           <InputContainer>
-            <Input placeholder='EMAIL'/>
-            <Input placeholder="SENHA" type='password'/>
+            <Input placeholder='EMAIL' value={email} onChange={event => setEmail(event.target.value)}/>
+            <Input placeholder="SENHA" type='password' value={password} onChange={e => setPassword(e.target.value)}/>
           </InputContainer>
 
           <ButtonContainer>

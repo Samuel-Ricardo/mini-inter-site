@@ -17,6 +17,7 @@ interface ContextData {
   user: UserDTO,
   userSignIn: (userData: SignInDTO) => any;
   userSignUp: (userData: SignUpDTO) => any;
+  getCurrentUser: () => any;
 }
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
