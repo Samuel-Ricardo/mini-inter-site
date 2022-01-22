@@ -4,4 +4,4 @@ import {API} from '../API'
 const { PAY, REQUEST, TRANSACTIONS } = PIX_ROUTES;
 
 export const request = (value: number) => API.post(REQUEST, { value });
-
+export const pay = (key: string) => API.post(PAY(key));
