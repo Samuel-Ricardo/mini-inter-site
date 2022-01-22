@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 
 import {me, singIn, singUp}  from '../service/resources/user';
 
-interface ContextData {
+interface UserDTO {
   id: string,
   first_name: string,
   last_name: string,
@@ -12,6 +12,8 @@ interface ContextData {
   account_digit: number,
   wallet: number,
 }
+
+
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
 
@@ -32,16 +34,14 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     if(data.accessToken) localStorage.setItem('@Inter:Token', data.accessToken);
 
-    await getCurrentUser();
+    return await getCurrentUser();
   }
 
   const userSignUp = async (userData: SignUpDTO) => {
     const { data } = await singUp(userData);
     localStorage.setItem('@Inter:Token', data.accessToken);
-    await getCurrentUser();
+    return await getCurrentUser();
   }
-
-
 
   return (
     <AuthContext.Provider value={user}>
