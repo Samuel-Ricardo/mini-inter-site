@@ -1,7 +1,14 @@
-export const API_ROUTES = {
+export const USER_ROUTES = {
   SIGNIN: '/user/singin',
   SIGNUP: '/user/singnup',
-  ME: '/me'
+  ME: '/user/me'
+}
+
+
+
+export const API_ROUTES = {
+  USER: {...USER_ROUTES},
+
 }
 
 export const api = {
