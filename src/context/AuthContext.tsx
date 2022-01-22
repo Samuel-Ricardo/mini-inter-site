@@ -13,7 +13,11 @@ interface UserDTO {
   wallet: number,
 }
 
-
+interface ContextData {
+  user: UserDTO,
+  userSignIn: (userData: SignInDTO) => any;
+  userSignUp: (userData: SignUpDTO) => any;
+}
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
 
