@@ -15,9 +15,9 @@ interface UserDTO {
 
 interface ContextData {
   user: UserDTO,
-  userSignIn: (userData: SignInDTO) => any;
-  userSignUp: (userData: SignUpDTO) => any;
-  getCurrentUser: () => any;
+  userSignIn: (userData: SignInDTO) => Promise<UserDTO>;
+  userSignUp: (userData: SignUpDTO) => Promise<UserDTO>;
+  getCurrentUser: () => Promise<UserDTO>;
 }
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
@@ -29,7 +29,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   const getCurrentUser = async () => {
     const { data } = await me();
     setUser(data);
-    return data;
+    return data as UserDTO;
   }
 
   const userSignIn = async (userData: SignInDTO) => {
