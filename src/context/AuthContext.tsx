@@ -20,7 +20,9 @@ export const AuthProvider: React.FC = ({ children }) => {
   const [user, setUser] = useState<ContextData>({} as ContextData);
 
   const getCurrentUser = async () => {
-    const {data} = await me();
+    const { data } = await me();
+    setUser(data);
+    return data;
   }
 
   const userSignIn = async (userData: SignInDTO) => {
