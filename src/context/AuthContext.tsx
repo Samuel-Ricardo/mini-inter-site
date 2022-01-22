@@ -19,19 +19,27 @@ export const AuthProvider: React.FC = ({ children }) => {
 
   const [user, setUser] = useState<ContextData>({} as ContextData);
 
+  const getCurrentUser = async () => {
+    const {data} = await me();
+  }
+
   const userSignIn = async (userData: SignInDTO) => {
     const { data } = await singIn(userData);
-    localStorage.setItem('@Inter:Token', data.accessToken);
+
+    data?.status == 'error' && data;
+
+    if(data.accessToken) localStorage.setItem('@Inter:Token', data.accessToken);
+
+    await getCurrentUser();
   }
 
   const userSignUp = async (userData: SignUpDTO) => {
     const { data } = await singUp(userData);
     localStorage.setItem('@Inter:Token', data.accessToken);
+    await getCurrentUser();
   }
 
-  const getCurrentUser = async () => {
-    const {data} = await me();
-  }
+
 
   return (
     <AuthContext.Provider value={user}>
