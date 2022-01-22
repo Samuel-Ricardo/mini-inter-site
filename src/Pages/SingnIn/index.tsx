@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { app_images } from "../../config/app_images";
 import { login_routes } from "../../config/routes/login_routes";
 import useAuth from "../../hooks/useAuth";
+import { routes } from "../../config/routes/routes";
 
 const SingIn = () => {
 
@@ -22,7 +23,14 @@ const SingIn = () => {
 
   const navigate = useNavigate();
 
-  const handleToSingIn = () => { navigate('/dashboard') };
+  const handleToSingIn = async () => {
+
+    const response = await userSignIn({email,password});
+
+    if(response.id){return navigate(routes.DASHBOARD)}
+
+    alert('Usuário ou senha inválido');
+  };
 
   const { Inter_logo, background_image } = app_images;
 
