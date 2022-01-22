@@ -10,3 +10,4 @@ interface ContextData {
   wallet: number,
 }
 
+export const AuthContext = createContext<ContextData>({});
