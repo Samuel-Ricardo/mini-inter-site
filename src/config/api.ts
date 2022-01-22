@@ -20,5 +20,5 @@ export const API_ROUTES = {
 export const api = {
   API_ROUTES,
   BASE_URL: 'https://mini-inter-api.herokuapp.com',
-  AUTHORIZATION: (token: string | null) => ({'Authorization': `Bearer ${token}`})
+  AUTHORIZATION: (token: string) => ({'Authorization': `Bearer ${token}`})
 }
