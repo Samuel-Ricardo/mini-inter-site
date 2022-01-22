@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import React, { createContext } from 'react';
 
 interface ContextData {
   id: string,
@@ -11,3 +11,4 @@ interface ContextData {
 }
 
 export const AuthContext = createContext<ContextData>({});
+
