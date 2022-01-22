@@ -3,14 +3,18 @@ import Card from "../../Components/Card";
 import Header from "../../Components/Header";
 import Input from "../../Components/Input";
 import { app_classes } from "../../config/style_classes";
+import useAuth from "../../hooks/useAuth";
 import { formatMoney } from "../../utils";
 import Statement from "./Statement";
 import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from "./style";
 
 const Dashboard = () => {
 
+
   const wallet = 1000.00;
-  const {H2, WALLET, BOLD, PRIMARY_COLOR} = app_classes;
+  const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
+
+
 
   return (
     <DashboardBackground>
