@@ -9,7 +9,9 @@ import { HeaderContainer, HeaderWrapper, UserInfo } from "./style";
 const Header = () => {
   const navigate = useNavigate();
 
-  const {user} = useAuth();
+  const { user } = useAuth();
+
+  const initials = (user.first_name.substring(0, 1) + user.last_name.substring(0, 1)).toUpperCase();
 
   const handleLogoff = () => { navigate(routes.LOGIN_ROUTES.LOGIN) }
 
@@ -20,7 +22,7 @@ const Header = () => {
       <HeaderWrapper>
         <img src={app_images.Inter_logo} width={172} height={61} alt="inter logo" />
         <UserInfo>
-        <UserCircle initials="SR" />
+        <UserCircle initials={initials} />
         <div>
             <p>Olá, <span className={`${PRIMARY_COLOR} ${BOLD}`}>{user.first_name} {user.last_name}</span></p>
             <strong>{user.account_number}-{user.account_digit}</strong><br />
