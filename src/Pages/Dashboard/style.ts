@@ -3,19 +3,25 @@ import styled from "styled-components";
 export const DashboardBackground = styled.main`
 
   width: 100%;
-  height: 100hv;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  background-color: ${({theme}) => theme.COLORS.BACKGROUND_LIGHT};
+
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_LIGHT};
+
 `;
 
 export const BodyContainer = styled.main`
 
-  width: 80%;
-  margin-top: 40pt;
+
+  width: 98%;
+  max-width: 100%;
+  margin-top: 20pt;
+
+
 
   display: flex;
   justify-content: space-between;
@@ -28,8 +34,11 @@ export const BodyContainer = styled.main`
     }
 
     &:nth-child(2) {
-      display: flex;
-      justify-content: flex-end;
+      padding-right:0pt;
+
+      & > div{
+        margin-left: 1.5%;
+      }
     }
   }
 `;

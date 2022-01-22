@@ -8,6 +8,7 @@ import { routes } from '../config/routes/routes';
 
 import SingIn from '../Pages/SingnIn';
 import SignUp from '../Pages/SingnUp';
+import Dashboard from '../Pages/Dashboard';
 
 const { DASHBOARD, LOGIN_ROUTES, ROOT } = routes;
 const {LOGIN, SIGNIN, SIGNUP} = LOGIN_ROUTES;
@@ -21,7 +22,7 @@ export const Router = () => {
         <Route path={LOGIN} element={<SingIn />} />
         <Route path={SIGNUP} element={<SignUp />} />
 
-        <Route path={DASHBOARD} />
+        <Route path={DASHBOARD} element={<Dashboard/>}/>
       </Routes>
     </BrowserRouter>
   )
