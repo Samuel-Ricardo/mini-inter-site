@@ -1,3 +1,5 @@
+import { AxiosRequestHeaders } from 'axios';
+
 export const USER_ROUTES = {
   SIGNIN: '/user/singin',
   SIGNUP: '/user/singnup',
@@ -17,5 +19,6 @@ export const API_ROUTES = {
 
 export const api = {
   API_ROUTES,
-  BASE_URL: 'https://mini-inter-api.herokuapp.com'
+  BASE_URL: 'https://mini-inter-api.herokuapp.com',
+  AUTHORIZATION: (token: string | null) => ({'Authorization': `Bearer ${token}`})
 }
