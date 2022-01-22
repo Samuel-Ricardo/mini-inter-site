@@ -1,3 +1,7 @@
+import { PIX_ROUTES } from '../../config/api'
 import {API} from '../API'
 
-export const request = (value: number) => API.post()
+const { PAY, REQUEST, TRANSACTIONS } = PIX_ROUTES;
+
+export const request = (value: number) => API.post(REQUEST, { value });
+
