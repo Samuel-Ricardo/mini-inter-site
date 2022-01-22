@@ -1,7 +1,7 @@
 import { SignInDTO, SignUpDTO } from '@Types/DTO';
 import React, { createContext, useState } from 'react';
 
-import {singIn, singUp}  from '../service/resources/user';
+import {me, singIn, singUp}  from '../service/resources/user';
 
 interface ContextData {
   id: string,
@@ -27,6 +27,10 @@ export const AuthProvider: React.FC = ({ children }) => {
   const userSignUp = async (userData: SignUpDTO) => {
     const { data } = await singUp(userData);
     localStorage.setItem('@Inter:Token', data.accessToken);
+  }
+
+  const getCurrentUser = async () => {
+    const {data} = await me();
   }
 
   return (
