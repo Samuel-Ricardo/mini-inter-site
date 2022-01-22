@@ -1,6 +1,9 @@
+import React, { createContext, useState } from 'react';
+
+import {AxiosResponse} from 'axios'
+
 import { UserDTO } from '@Type/DTO';
 import { SignInDTO, SignUpDTO } from '@Types/DTO';
-import React, { createContext, useState } from 'react';
 
 import {me, singIn, singUp}  from '../service/resources/user';
 
@@ -8,7 +11,7 @@ interface ContextData {
   user: UserDTO,
   userSignIn: (userData: SignInDTO) => Promise<UserDTO>;
   userSignUp: (userData: SignUpDTO) => Promise<UserDTO>;
-  getCurrentUser: () => Promise<UserDTO>;
+  getCurrentUser: () => Promise<AxiosResponse<UserDTO,any>>;
 }
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
@@ -20,7 +23,7 @@ export const AuthProvider: React.FC = ({ children }) => {
   const getCurrentUser = async () => {
     const { data } = await me();
     setUser(data);
-    return data as UserDTO;
+    return data;
   }
 
   const userSignIn = async (userData: SignInDTO) => {

@@ -7,4 +7,4 @@ import { SignInDTO, SignUpDTO } from "@Types/DTO";
 
 export const singIn = async (data: SignInDTO) => API.post(USER_ROUTES.SIGNIN, data)
 export const singUp = async (data: SignUpDTO) => API.post(USER_ROUTES.SIGNUP, data)
-export const me = async () => API.get<UserDTO>(USER_ROUTES.ME);
+export const me = async () => API.get(USER_ROUTES.ME);
