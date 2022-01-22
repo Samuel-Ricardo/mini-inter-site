@@ -1,13 +1,18 @@
+import { AuthProvider } from "./context/AuthContext";
 import { ThemeProvider } from "styled-components";
-import { Router } from "./routes";
-import GlobalStyle from "./style/global/global_styles";
+
 import { themes } from "./style/themes";
+import GlobalStyle from "./style/global/global_styles";
+
+import { Router } from "./routes";
 
 function App (){
   return (
     <ThemeProvider theme={themes.LITE}>
-      <GlobalStyle/>
-      <Router/>
+      <AuthProvider>
+        <GlobalStyle/>
+        <Router/>
+      </AuthProvider>
     </ThemeProvider>
   )
 }
