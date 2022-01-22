@@ -1,6 +1,7 @@
 export const API_ROUTES = {
   SIGNIN: '/user/singin',
-  SIGNUP: '/user/singnup'
+  SIGNUP: '/user/singnup',
+  ME: '/me'
 }
 
 export const api = {
