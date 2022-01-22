@@ -9,7 +9,7 @@ const API = axios.create({baseURL: api.BASE_URL});
 
 API.interceptors.request.use(config => {
 
-    const token = localStorage.getItem(USER.TOKEN);
+    const token = localStorage.getItem(USER.TOKEN) || '';
 
     config.headers = api.AUTHORIZATION(token);
     return config;
