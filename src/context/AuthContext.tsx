@@ -1,17 +1,8 @@
+import { UserDTO } from '@Type/DTO';
 import { SignInDTO, SignUpDTO } from '@Types/DTO';
 import React, { createContext, useState } from 'react';
 
 import {me, singIn, singUp}  from '../service/resources/user';
-
-interface UserDTO {
-  id: string,
-  first_name: string,
-  last_name: string,
-  email: string,
-  account_number: number,
-  account_digit: number,
-  wallet: number,
-}
 
 interface ContextData {
   user: UserDTO,
