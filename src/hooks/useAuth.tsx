@@ -6,3 +6,5 @@ const useAuth = () => {
   if (!context) throw new Error("No context found");
   return context
 }
+
+export default useAuth;
