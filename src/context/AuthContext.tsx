@@ -10,5 +10,12 @@ interface ContextData {
   wallet: number,
 }
 
-export const AuthContext = createContext<ContextData>({});
+export const AuthContext = createContext<ContextData>({} as ContextData);
 
+export const AuthProvider:React.FC = ({children}) => {
+  return (
+    <AuthContext.Provider value={{}}>
+      {children}
+    </AuthContext.Provider>
+  )
+}
