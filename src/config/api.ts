@@ -4,11 +4,15 @@ export const USER_ROUTES = {
   ME: '/user/me'
 }
 
-
+export const PIX_ROUTES = {
+  REQUEST: '/pix/request',
+  PAY: (value: number) => `/pix/pay/${value}`,
+  TRANSACTIONS: '/transactions'
+}
 
 export const API_ROUTES = {
   USER: {...USER_ROUTES},
-
+  PIX: {...PIX_ROUTES}
 }
 
 export const api = {
