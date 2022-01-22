@@ -6,7 +6,7 @@ export const USER_ROUTES = {
 
 export const PIX_ROUTES = {
   REQUEST: '/pix/request',
-  PAY: (value: number) => `/pix/pay/${value}`,
+  PAY: (key: number) => `/pix/pay/${key}`,
   TRANSACTIONS: '/transactions'
 }
 
