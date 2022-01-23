@@ -10,7 +10,7 @@ const Statement = ()  => {
 
   const getAllTransactions = async () => {
     const { data } = await transactions();
-    setStatements(data);
+    setStatements(data.transactions);
   }
 
   useEffect(() => { getAllTransactions() }, []);
