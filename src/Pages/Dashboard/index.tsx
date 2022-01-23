@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
@@ -13,11 +13,14 @@ import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from
 
 const Dashboard = () => {
 
-  const {user, getCurrentUser} = useAuth();
-
+  const { user, getCurrentUser } = useAuth();
   const navigate = useNavigate();
 
-  useEffect(() => {getCurrentUser()}, []);
+  const [key, setKey] = useState('');
+  const [generatedKey, setGeneratedKey] = useState('');
+  const [newValue, setNewValue] = useState();
+
+  useEffect(() => { getCurrentUser() }, []);
 
 
   const wallet = user.wallet;
@@ -30,11 +33,11 @@ const Dashboard = () => {
 
   return (
     <DashboardBackground>
-      <Header/>
+      <Header />
 
       <BodyContainer>
         <div>
-        <Card shadow={false} width="90%">
+          <Card shadow={false} width="90%">
             <InlineTitle>
               <h2 className={H2}>Saldo Atual</h2>
             </InlineTitle>
@@ -53,8 +56,7 @@ const Dashboard = () => {
               <Button>Gerar Código</Button>
             </InlineContainer>
 
-            <p className={PRIMARY_COLOR}>Pix copia e cola:</p>
-            <p className={PRIMARY_COLOR}>asd10asd1asd1as4d1asd4</p>
+            
           </Card>
           <Card shadow={false} width="90%">
             <InlineTitle>
@@ -71,7 +73,7 @@ const Dashboard = () => {
             <InlineTitle>
               <h2 className={H2}>Extrato da Conta</h2>
             </InlineTitle>
-            <Statement/>
+            <Statement />
           </Card>
         </div>
       </BodyContainer>
