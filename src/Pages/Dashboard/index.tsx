@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
 import Header from "../../Components/Header";
@@ -10,7 +11,10 @@ import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from
 
 const Dashboard = () => {
 
-  const {user} = useAuth();
+  const {user, getCurrentUser} = useAuth();
+
+  useEffect(() => {getCurrentUser()}, []);
+
 
   const wallet = user.wallet;
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
