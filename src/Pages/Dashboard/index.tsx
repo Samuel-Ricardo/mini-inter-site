@@ -11,7 +11,7 @@ import { routes } from "../../config/routes/routes";
 import { app_classes } from "../../config/style_classes";
 
 import useAuth from "../../hooks/useAuth";
-import {request} from '../../service/resources/pix';
+import {pay, request} from '../../service/resources/pix';
 
 import { formatMoney, set } from "../../utils";
 import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from "./style";
@@ -39,6 +39,21 @@ const Dashboard = () => {
     const { data } = await request(Number(value));
 
     if (data.copyPasteKey) { setGeneratedKey(data.copyPasteKey) }
+  }
+
+  const handlePayPix = async () => {
+    try {
+
+      const { data } = await pay(key);
+
+      if (data.message) {
+        alert(data.message);
+        return;
+      }
+
+      alert("Não foi possivel realizar o pagamento");
+
+    } catch (error) { console.log(error) };
   }
 
   return (
