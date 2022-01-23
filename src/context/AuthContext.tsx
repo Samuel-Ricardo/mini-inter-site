@@ -8,12 +8,19 @@ import { SignInDTO, SignUpDTO } from '@Types/DTO';
 
 import {me, singIn, singUp}  from '../service/resources/user';
 import { ContextData } from '../@types/context/ContextData';
+import { STORAGE } from '../config/local_storage';
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
 
 export const AuthProvider: React.FC = ({ children }) => {
 
-  const [user, setUser] = useState<UserDTO>({} as UserDTO);
+  const [user, setUser] = useState<UserDTO>(() => {
+    const user = localStorage.getItem(STORAGE.USER.TOKEN);
+
+    if (user) return JSON.parse(user);
+
+      return {} as UserDTO;
+  });
 
   const getCurrentUser = async () => {
     const { data } = await me();
