@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { ChangeEvent, Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
@@ -12,6 +12,11 @@ import Statement from "./Statement";
 import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from "./style";
 
 const Dashboard = () => {
+
+  const set = (
+    event: ChangeEvent<HTMLInputElement>,
+    observer: Dispatch<SetStateAction<any>>
+  ) => { observer(event.target.value) }
 
   const { user, getCurrentUser } = useAuth();
   const navigate = useNavigate();
@@ -52,7 +57,7 @@ const Dashboard = () => {
               <h2 className={H2}>Receber PIX</h2>
             </InlineTitle>
             <InlineContainer>
-              <Input style={{ flex: 1 }} />
+              <Input style={{ flex: 1 }} value={key} onChange={e => set(e, setKey)}/>
               <Button>Gerar Código</Button>
             </InlineContainer>
 
