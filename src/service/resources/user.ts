@@ -1,7 +1,7 @@
 import { API } from "../API";
 import { USER_ROUTES } from "../../config/api";
 
-import { UserDTO } from "@Type/DTO";
+import { UserDTO } from "@Types/DTO";
 import { SignInDTO, SignUpDTO } from "@Types/DTO";
 
 
