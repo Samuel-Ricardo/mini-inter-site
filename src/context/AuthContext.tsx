@@ -23,6 +23,8 @@ export const AuthProvider: React.FC = ({ children }) => {
   });
 
   const getCurrentUser = async () => {
+    const { data } = await me();
+    setUser(data);
     localStorage.setItem(STORAGE.USER.DATA, JSON.stringify(user));
     return user;
   }
