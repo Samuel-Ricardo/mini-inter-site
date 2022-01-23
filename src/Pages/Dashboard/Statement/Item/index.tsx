@@ -18,7 +18,7 @@ const StatementItem = ({type, updatedAt, user, value}: statement) => {
           {formatMoney(value)}
         </p>
         <p>{type === 'pay' ? `Pago a` : `Recebido de`} <strong>{user.first_name} {user.last_name}</strong> </p>
-        <p>{format(updatedAt, "dd/MM/yyyy ' às ' HH:mm'h'")}</p>
+        <p>{format(new Date(updatedAt), "dd/MM/yyyy ' às ' HH:mm'h'")}</p>
       </StatementItemInfo>
     </StatementItemContainer>
   )
