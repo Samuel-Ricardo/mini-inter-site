@@ -37,6 +37,8 @@ const Dashboard = () => {
 
   const handleNewPayment = async () => {
     const { data } = await request(Number(value));
+
+    if (data.copyPasteKey) { setGeneratedKey(data.copyPasteKey) }
   }
 
   return (
