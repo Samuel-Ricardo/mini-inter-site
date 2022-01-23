@@ -1,8 +1,10 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
 import Header from "../../Components/Header";
 import Input from "../../Components/Input";
+import { routes } from "../../config/routes/routes";
 import { app_classes } from "../../config/style_classes";
 import useAuth from "../../hooks/useAuth";
 import { formatMoney } from "../../utils";
@@ -13,13 +15,18 @@ const Dashboard = () => {
 
   const {user, getCurrentUser} = useAuth();
 
+  const navigate = useNavigate();
+
   useEffect(() => {getCurrentUser()}, []);
 
 
   const wallet = user.wallet;
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
-  //if (!user) return (<></>);
+  if (!user) {
+    alert('Nenhum usuário logado foi encontrado no sistema');
+    navigate(routes.ROOT);
+  }
 
   return (
     <DashboardBackground>
