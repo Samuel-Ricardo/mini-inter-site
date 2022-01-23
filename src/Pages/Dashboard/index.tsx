@@ -27,14 +27,15 @@ const Dashboard = () => {
 
   useEffect(() => { getCurrentUser() }, []);
 
-
-  const wallet = user.wallet;
-  const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
-
   if (!user) {
     alert('Nenhum usuário logado foi encontrado no sistema');
     navigate(routes.ROOT);
   }
+
+  const wallet = user.wallet;
+  const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
+
+  
 
   return (
     <DashboardBackground>
@@ -57,14 +58,17 @@ const Dashboard = () => {
               <h2 className={H2}>Receber PIX</h2>
             </InlineTitle>
             <InlineContainer>
-              <Input style={{ flex: 1 }} value={key} onChange={e => set(e, setKey)}/>
+              <Input
+                style={{ flex: 1 }}
+                value={newValue} onChange={e => set(e, setNewValue)} placeholder="Insira o Valor"
+              />
               <Button>Gerar Código</Button>
             </InlineContainer>
 
             {generatedKey && (
               <>
                 <p className={PRIMARY_COLOR}>Pix copia e cola:</p>
-                <p className={PRIMARY_COLOR}>asd10asd1asd1as4d1asd4</p>
+                <p className={PRIMARY_COLOR}>{generatedKey}</p>
               </>
             )}
           </Card>
@@ -73,7 +77,8 @@ const Dashboard = () => {
               <h2 className={H2}>Pagar PIX</h2>
             </InlineTitle>
             <InlineContainer>
-              <Input style={{ flex: 1 }} />
+              <Input
+                style={{ flex: 1 }} value={key} onChange={e => set(e, setKey)} placeholder="Insira o PIX" />
               <Button>Pagar PIX</Button>
             </InlineContainer>
           </Card>
