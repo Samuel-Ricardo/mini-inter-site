@@ -13,6 +13,8 @@ const Statement = ()  => {
     setStatements(data);
   }
 
+  useEffect(() => { getAllTransactions() }, []);
+
   return (
     <StatementContainer>
       {statements && statements.map(statement => <StatementItem {...statement}/>)}
