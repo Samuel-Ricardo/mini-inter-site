@@ -53,7 +53,10 @@ const Dashboard = () => {
 
       alert("Não foi possivel realizar o pagamento");
 
-    } catch (error) { console.log(error) };
+    } catch (error) {
+      console.log(error)
+        alert("Não é possivel receber Pix do mesmo usuário");
+    };
   }
 
   return (
