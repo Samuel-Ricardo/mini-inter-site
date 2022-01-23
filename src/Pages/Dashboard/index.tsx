@@ -19,7 +19,7 @@ const Dashboard = () => {
   const wallet = user.wallet;
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
-  if (!user) return (<></>);
+  //if (!user) return (<></>);
 
   return (
     <DashboardBackground>
