@@ -56,7 +56,12 @@ const Dashboard = () => {
               <Button>Gerar Código</Button>
             </InlineContainer>
 
-            
+            {generatedKey && (
+              <>
+                <p className={PRIMARY_COLOR}>Pix copia e cola:</p>
+                <p className={PRIMARY_COLOR}>asd10asd1asd1as4d1asd4</p>
+              </>
+            )}
           </Card>
           <Card shadow={false} width="90%">
             <InlineTitle>
