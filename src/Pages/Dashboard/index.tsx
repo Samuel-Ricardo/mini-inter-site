@@ -1,29 +1,29 @@
 import { ChangeEvent, Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
 import Header from "../../Components/Header";
 import Input from "../../Components/Input";
+import Statement from "./Statement";
+
 import { routes } from "../../config/routes/routes";
 import { app_classes } from "../../config/style_classes";
+
 import useAuth from "../../hooks/useAuth";
-import { formatMoney } from "../../utils";
-import Statement from "./Statement";
+import {request} from '../../service/resources/pix';
+
+import { formatMoney, set } from "../../utils";
 import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from "./style";
 
 const Dashboard = () => {
-
-  const set = (
-    event: ChangeEvent<HTMLInputElement>,
-    observer: Dispatch<SetStateAction<any>>
-  ) => { observer(event.target.value) }
 
   const { user, getCurrentUser } = useAuth();
   const navigate = useNavigate();
 
   const [key, setKey] = useState('');
   const [generatedKey, setGeneratedKey] = useState('');
-  const [newValue, setNewValue] = useState();
+  const [value, setValue] = useState();
 
   useEffect(() => { getCurrentUser() }, []);
 
@@ -35,7 +35,9 @@ const Dashboard = () => {
   const wallet = user.wallet;
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
-  
+  const handleNewPayment = async () => {
+    const { data } = await request(Number(value));
+  }
 
   return (
     <DashboardBackground>
@@ -60,7 +62,7 @@ const Dashboard = () => {
             <InlineContainer>
               <Input
                 style={{ flex: 1 }}
-                value={newValue} onChange={e => set(e, setNewValue)} placeholder="Insira o Valor"
+                value={value} onChange={e => set(e, setValue)} placeholder="Insira o Valor"
               />
               <Button>Gerar Código</Button>
             </InlineContainer>
