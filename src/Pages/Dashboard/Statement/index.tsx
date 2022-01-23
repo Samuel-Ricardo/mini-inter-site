@@ -8,7 +8,10 @@ const Statement = ()  => {
 
   const [statements, setStatements] = useState<statement[]>([]);
 
-
+  const getAllTransactions = async () => {
+    const { data } = await transactions();
+    setStatements(data);
+  }
 
   return (
     <StatementContainer>
