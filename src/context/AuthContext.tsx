@@ -2,17 +2,12 @@ import React, { createContext, useState } from 'react';
 
 import {AxiosResponse} from 'axios'
 
-import { UserDTO } from '@Type/DTO';
+//import { ContextData } from '@Types/context';
+import { UserDTO } from '@Types/DTO';
 import { SignInDTO, SignUpDTO } from '@Types/DTO';
 
 import {me, singIn, singUp}  from '../service/resources/user';
-
-interface ContextData {
-  user: UserDTO,
-  userSignIn: (userData: SignInDTO) => Promise<UserDTO>;
-  userSignUp: (userData: SignUpDTO) => Promise<UserDTO>;
-  getCurrentUser: () => Promise<UserDTO>;
-}
+import { ContextData } from '../@types/context/ContextData';
 
 export const AuthContext = createContext<ContextData>({} as ContextData);
 

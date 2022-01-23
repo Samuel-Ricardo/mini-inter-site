@@ -1,4 +1,4 @@
-declare module '@Type/DTO' {
+declare module '@Types/DTO' {
   export interface UserDTO {
     id: string,
     first_name: string,

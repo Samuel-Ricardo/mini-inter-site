@@ -1,10 +1,11 @@
-import { UserDTO } from "@Type/DTO";
+import { UserDTO } from '@Types/DTO';
 
-declare module '@Type/context' {
-  interface ContextData {
+declare module '@Types/context' {
+  export interface ContextData {
     user: UserDTO,
-    userSignIn: (userData: SignInDTO) => Promise<UserDTO>;
-    userSignUp: (userData: SignUpDTO) => Promise<UserDTO>;
-    getCurrentUser: () => Promise<UserDTO>;
+    userSignIn: (userData: SignInDTO) => Promise<UserDTO>,
+    userSignUp: (userData: SignUpDTO) => Promise<UserDTO>,
+    getCurrentUser: () => Promise<UserDTO>
   }
 }
+
