@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
 export const CardContainer = styled.div<{
-  width: string;
-  heigth: string;
-  shadow: boolean;
-  margin: string;
+  width: string,
+  heigth: string,
+  shadow: boolean,
+  margin: string,
 }>`
 
   width: ${({ width }) => width};
