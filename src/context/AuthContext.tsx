@@ -10,7 +10,24 @@ import {me, singIn, singUp}  from '../service/resources/user';
 import { ContextData } from '../@types/context/ContextData';
 import { STORAGE } from '../config/local_storage';
 
-export const AuthContext = createContext<ContextData>({} as ContextData);
+const INITIAL_STATE: ContextData = {
+
+  getCurrentUser: ():any => {},
+  user: {
+    id: '',
+    account_digit: 0,
+    account_number: 0,
+    email: '',
+    first_name: '',
+    last_name: '',
+    wallet: 0,
+  },
+  userSignIn: ():any => {},
+  userSignUp: ():any => {}
+
+};
+
+export const AuthContext = createContext<ContextData>(INITIAL_STATE);
 
 export const AuthProvider: React.FC = ({ children }) => {
 
@@ -19,7 +36,7 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     if (user) return JSON.parse(user);
 
-      return {} as UserDTO;
+      return {};
   });
 
   const getCurrentUser = async () => {

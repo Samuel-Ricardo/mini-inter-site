@@ -8,3 +8,11 @@ ReactDOM.render(
   </StrictMode>,
   document.getElementById('root')
 )
+/*
+"eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+ */
