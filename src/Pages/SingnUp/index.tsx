@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+import useAuth from "../../hooks/useAuth";
+
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
 import Input from "../../Components/Input";
@@ -12,8 +14,11 @@ import { routes } from "../../config/routes/routes";
 import { login_routes } from "../../config/routes/login_routes";
 
 import { signup_style } from "./style";
+import { SignUpDTO } from '@Types/DTO';
 
 const SignUp = () => {
+
+  const {userSignUp} = useAuth();
 
   const navigate = useNavigate();
 
@@ -23,9 +28,24 @@ const SignUp = () => {
   const [password, setPassword] = useState('');
   const [confirmPass, setConfirmPass] = useState('');
 
-  const handleToDashboard = () => {
+  const handleToDashboard = async () => {
+    let response;
 
-    navigate(routes.DASHBOARD)
+    if (password === confirmPass) {
+      const user: SignUpDTO = {
+        first_name,
+        last_name,
+        email,
+        password
+      }
+
+      response = await userSignUp(user);
+
+      if (response.id) return navigate(routes.DASHBOARD);
+
+      return alert('Erro ao Cadastrar');
+
+    } else { return alert('As senhas não estão iguais') }
   }
 
   const {
