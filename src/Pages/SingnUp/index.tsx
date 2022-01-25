@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -16,7 +17,14 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
+  const [first_name, setName] = useState('');
+  const [last_name, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPass, setConfirmPass] = useState('');
+
   const handleToDashboard = () => {
+
     navigate(routes.DASHBOARD)
   }
 
@@ -35,11 +43,30 @@ const SignUp = () => {
 
         <InputContainer>
 
-          <Input placeholder="NOME"/>
-          <Input placeholder="SOBRENOME"/>
-          <Input placeholder="EMAIL"/>
-          <Input placeholder="SENHA" type="password"/>
-          <Input placeholder="CONFIRMAR SENHA" type="password"/>
+          <Input placeholder="NOME"
+            value={first_name}
+            onChange={e => setName(e.target.value)}
+          />
+
+          <Input placeholder="SOBRENOME"
+            value={last_name}
+            onChange={e => setLastName(e.target.value)}
+          />
+
+          <Input placeholder="EMAIL" type='email'
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
+
+          <Input placeholder="SENHA" type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
+
+          <Input placeholder="CONFIRMAR SENHA" type="password"
+            value={confirmPass}
+            onChange={e => setConfirmPass(e.target.value)}
+          />
 
         </InputContainer>
 
