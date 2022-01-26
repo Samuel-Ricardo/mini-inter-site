@@ -51,7 +51,7 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     data?.status == 'error' && data;
 
-    if(data.accessToken) localStorage.setItem(STORAGE.USER.TOKEN, data.accessToken);
+    if(data.access_token) localStorage.setItem(STORAGE.USER.TOKEN, data.access_token);
 
     return await getCurrentUser();
   }

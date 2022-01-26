@@ -22,8 +22,8 @@ const SignUp = () => {
 
   const navigate = useNavigate();
 
-  const [first_name, setName] = useState('');
-  const [last_name, setLastName] = useState('');
+  const [firstName, setName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPass, setConfirmPass] = useState('');
@@ -33,9 +33,9 @@ const SignUp = () => {
   }
 
   const IsfieldsEmpty = (): boolean => {
-    
-    if (isEmpty(first_name)) return false;
-    if (isEmpty(last_name)) return false;
+
+    if (isEmpty(firstName)) return false;
+    if (isEmpty(lastName)) return false;
     if (isEmpty(email)) return false;
     if (isEmpty(password)) return false;
     if (isEmpty(confirmPass)) return false;
@@ -48,8 +48,8 @@ const SignUp = () => {
     if(IsfieldsEmpty()){
       if (password === confirmPass) {
         const user: SignUpDTO = {
-          first_name,
-          last_name,
+          firstName,
+          lastName,
           email,
           password
         }
@@ -80,12 +80,12 @@ const SignUp = () => {
         <InputContainer>
 
           <Input placeholder="NOME"
-            value={first_name}
+            value={firstName}
             onChange={e => setName(e.target.value)}
           />
 
           <Input placeholder="SOBRENOME"
-            value={last_name}
+            value={lastName}
             onChange={e => setLastName(e.target.value)}
           />
 

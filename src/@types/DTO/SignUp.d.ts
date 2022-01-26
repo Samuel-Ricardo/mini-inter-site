@@ -1,7 +1,7 @@
 declare module '@Types/DTO' {
   export interface SignUpDTO {
-    first_name: string,
-    last_name: string,
+    firstName: string,
+    lastName: string,
     email: string,
     password: string
   }
