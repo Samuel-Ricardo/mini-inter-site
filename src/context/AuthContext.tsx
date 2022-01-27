@@ -15,7 +15,7 @@ const INITIAL_STATE: ContextData = {
   getCurrentUser: ():any => {},
   user: {
     id: '',
-    account_digit: 0,
+    accountDigit: 0,
     accountNumber: 0,
     email: '',
     firstName: '',
