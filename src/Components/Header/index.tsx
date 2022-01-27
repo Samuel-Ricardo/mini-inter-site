@@ -25,7 +25,7 @@ const Header = () => {
         <UserCircle initials={initials} />
         <div>
             <p>Olá, <span className={`${PRIMARY_COLOR} ${BOLD}`}>{user.firstName} {user.lastName}</span></p>
-            <strong>{user.accountNumber}-{user.accountDigit}</strong><br />
+            <strong>{user.accountNumber}-{user.accountDigits}</strong><br />
           <a href="#" onClick={handleLogoff}>Sair</a>
         </div>
         </UserInfo>
