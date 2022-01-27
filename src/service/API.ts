@@ -5,7 +5,7 @@ import { STORAGE } from '../config/local_storage';
 
 const {USER} = STORAGE;
 
-const API = axios.create({baseURL: api.BASE_URL_DEVELOPMENT});
+const API = axios.create({baseURL: api.BASE_URL});
 
 API.interceptors.request.use(config => {
 

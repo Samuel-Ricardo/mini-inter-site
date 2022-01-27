@@ -84,7 +84,7 @@ const Dashboard = () => {
                 style={{ flex: 1 }}
                 value={value} onChange={e => set(e, setValue)} placeholder="Insira o Valor"
               />
-              <Button>Gerar Código</Button>
+              <Button onClick={handleNewPayment}>Gerar Código</Button>
             </InlineContainer>
 
             {generatedKey && (
@@ -101,7 +101,7 @@ const Dashboard = () => {
             <InlineContainer>
               <Input
                 style={{ flex: 1 }} value={key} onChange={e => set(e, setKey)} placeholder="Insira o PIX" />
-              <Button>Pagar PIX</Button>
+              <Button onClick={handlePayPix}>Pagar PIX</Button>
             </InlineContainer>
           </Card>
         </div>
