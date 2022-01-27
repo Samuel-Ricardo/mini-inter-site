@@ -11,7 +11,7 @@ const Header = () => {
 
   const { user } = useAuth();
 
-  const initials = (user.firstName.substring(0, 1) + user.last_name.substring(0, 1)).toUpperCase();
+  const initials = (user.firstName.substring(0, 1) + user.lastName.substring(0, 1)).toUpperCase();
 
   const handleLogoff = () => { navigate(routes.LOGIN_ROUTES.LOGIN) }
 
@@ -24,7 +24,7 @@ const Header = () => {
         <UserInfo>
         <UserCircle initials={initials} />
         <div>
-            <p>Olá, <span className={`${PRIMARY_COLOR} ${BOLD}`}>{user.firstName} {user.last_name}</span></p>
+            <p>Olá, <span className={`${PRIMARY_COLOR} ${BOLD}`}>{user.firstName} {user.lastName}</span></p>
             <strong>{user.account_number}-{user.account_digit}</strong><br />
           <a href="#" onClick={handleLogoff}>Sair</a>
         </div>

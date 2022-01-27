@@ -19,7 +19,7 @@ const INITIAL_STATE: ContextData = {
     account_number: 0,
     email: '',
     firstName: '',
-    last_name: '',
+    lastName: '',
     wallet: 0,
   },
   userSignIn: ():any => {},
