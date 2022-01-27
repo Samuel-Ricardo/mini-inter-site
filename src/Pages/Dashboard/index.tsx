@@ -33,6 +33,12 @@ const Dashboard = () => {
   }
 
   const wallet = user.wallet;
+
+  console.log('')
+  console.log('')
+  console.log('wallet ' + typeof wallet);
+  console.log('')
+
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
   const handleNewPayment = async () => {
@@ -69,7 +75,7 @@ const Dashboard = () => {
             <InlineTitle>
               <h2 className={H2}>Saldo Atual</h2>
             </InlineTitle>
-            <InlineContainer>
+            <InlineContainer className={WALLET}>
               <h3 className={WALLET}>
                 {formatMoney(wallet)}
               </h3>

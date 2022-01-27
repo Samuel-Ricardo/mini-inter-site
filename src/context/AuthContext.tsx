@@ -41,9 +41,12 @@ export const AuthProvider: React.FC = ({ children }) => {
 
   const getCurrentUser = async () => {
     const { data } = await me();
-    await setUser(data);
-    localStorage.setItem(STORAGE.USER.DATA, JSON.stringify(data));
-    return data;
+    const wallet = Number(data.wallet);
+
+    await setUser({...data, wallet});
+    localStorage.setItem(STORAGE.USER.DATA, JSON.stringify({ ...data, wallet }));
+    
+    return {...data, wallet};
   }
 
   const userSignIn = async (userData: SignInDTO) => {

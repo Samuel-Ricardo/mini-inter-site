@@ -46,10 +46,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .wallet{
+    display: flex;
     font-weight: 500;
     color: ${({ theme }) => theme.COLORS.PRIMARY};
     font-size: 2.5rem; //~40px
     line-height: 47pt;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 `
 export default GlobalStyle;
