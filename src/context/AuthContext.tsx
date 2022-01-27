@@ -18,7 +18,7 @@ const INITIAL_STATE: ContextData = {
     account_digit: 0,
     account_number: 0,
     email: '',
-    first_name: '',
+    firstName: '',
     last_name: '',
     wallet: 0,
   },

@@ -1,7 +1,7 @@
 declare module '@Types/DTO' {
   export interface UserDTO {
     id: string,
-    first_name: string,
+    firstName: string,
     last_name: string,
     email: string,
     account_number: number,
