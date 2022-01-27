@@ -16,7 +16,7 @@ const INITIAL_STATE: ContextData = {
   user: {
     id: '',
     account_digit: 0,
-    account_number: 0,
+    accountNumber: 0,
     email: '',
     firstName: '',
     lastName: '',
