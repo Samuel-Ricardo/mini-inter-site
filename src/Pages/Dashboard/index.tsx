@@ -27,7 +27,7 @@ const Dashboard = () => {
 
   useEffect(() => { getCurrentUser() }, []);
 
-  if (!user || user.id) {
+  if (!user || !user.id) {
     alert('Nenhum usuário logado foi encontrado no sistema');
     navigate(routes.ROOT);
   }
