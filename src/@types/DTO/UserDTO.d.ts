@@ -4,7 +4,7 @@ declare module '@Types/DTO' {
     firstName: string,
     lastName: string,
     email: string,
-    account_number: number,
+    accountNumber: number,
     account_digit: number,
     wallet: number,
   }
