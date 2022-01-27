@@ -41,9 +41,9 @@ export const AuthProvider: React.FC = ({ children }) => {
 
   const getCurrentUser = async () => {
     const { data } = await me();
-    setUser(data);
-    localStorage.setItem(STORAGE.USER.DATA, JSON.stringify(user));
-    return user;
+    await setUser(data);
+    localStorage.setItem(STORAGE.USER.DATA, JSON.stringify(data));
+    return data;
   }
 
   const userSignIn = async (userData: SignInDTO) => {
@@ -51,14 +51,14 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     data?.status == 'error' && data;
 
-    if(data.access_token) localStorage.setItem(STORAGE.USER.TOKEN, data.access_token);
+    if(data.access_token) await localStorage.setItem(STORAGE.USER.TOKEN, data.access_token);
 
     return await getCurrentUser();
   }
 
   const userSignUp = async (userData: SignUpDTO) => {
     const { data } = await singUp(userData);
-    localStorage.setItem(STORAGE.USER.TOKEN, data.accessToken);
+    await localStorage.setItem(STORAGE.USER.TOKEN, data.accessToken);
     return await getCurrentUser();
   }
 
