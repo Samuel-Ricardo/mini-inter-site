@@ -9,7 +9,7 @@ export const USER_ROUTES = {
 export const PIX_ROUTES = {
   REQUEST: '/pix/request',
   PAY: (key: string) => `/pix/pay/${key}`,
-  TRANSACTIONS: '/transactions'
+  TRANSACTIONS: '/pix/transactions'
 }
 
 export const API_ROUTES = {
