@@ -34,17 +34,13 @@ const Dashboard = () => {
 
   const wallet = user.wallet;
 
-  console.log('')
-  console.log('')
-  console.log('wallet ' + typeof wallet);
-  console.log('')
-
   const { H2, WALLET, BOLD, PRIMARY_COLOR } = app_classes;
 
   const handleNewPayment = async () => {
     const { data } = await request(Number(value));
 
     if (data.copyPasteKey) { setGeneratedKey(data.copyPasteKey) }
+    getCurrentUser()
   }
 
   const handlePayPix = async () => {
@@ -57,7 +53,9 @@ const Dashboard = () => {
         return;
       }
 
-      alert("Não foi possivel realizar o pagamento");
+      alert("Pagamento realizar com sucesso");
+
+      getCurrentUser();
 
     } catch (error) {
       console.log(error)

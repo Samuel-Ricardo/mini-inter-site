@@ -11,6 +11,11 @@ const Statement = ()  => {
   const getAllTransactions = async () => {
     const { data } = await transactions();
     setStatements(data.transactions);
+
+    console.log('')
+    console.log("transactions")
+    console.log(data)
+    console.log('')
   }
 
   useEffect(() => { getAllTransactions() }, []);

@@ -32,7 +32,11 @@ export const AuthContext = createContext<ContextData>(INITIAL_STATE);
 export const AuthProvider: React.FC = ({ children }) => {
 
   const [user, setUser] = useState<UserDTO>(() => {
-    const user = localStorage.getItem(STORAGE.USER.TOKEN);
+    const user = localStorage.getItem(STORAGE.USER.DATA);
+
+    console.log('Local Storage')
+    console.log(user)
+    console.log('')
 
     if (user) return JSON.parse(user);
 
@@ -45,7 +49,7 @@ export const AuthProvider: React.FC = ({ children }) => {
 
     await setUser({...data, wallet});
     localStorage.setItem(STORAGE.USER.DATA, JSON.stringify({ ...data, wallet }));
-    
+
     return {...data, wallet};
   }
 
