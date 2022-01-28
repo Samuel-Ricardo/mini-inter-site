@@ -9,7 +9,10 @@ const Statement = ()  => {
   const [statements, setStatements] = useState<statement[]>([]);
 
   const getAllTransactions = async () => {
-    const { data } = await transactions();
+    let { data } = await transactions();
+
+    data.transactions = data.transactions.filter((item => item.user.firstName))
+
     setStatements(data.transactions);
 
     console.log('')
