@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StatementItemContainer = styled.div`
     display: flex;
     width: 100%;
+    align-items: center;
 `
 
 export const StatementItemInfo = styled.div`
@@ -10,11 +11,13 @@ export const StatementItemInfo = styled.div`
 `
 
 export const StatementItemImage = styled.div<{
-  type: 'pay' | 'received'
+  type: 'paid' | 'received'
 }>`
 
-  width: 60pt;
-  height: 60pt;
+  margin-bottom: 20px;
+
+  width: 70pt;
+  height: 70pt;
 
   margin-right: 20pt;
   margin-top: 20pt;
@@ -27,5 +30,5 @@ export const StatementItemImage = styled.div<{
 
   color: ${({ theme }) => theme.COLORS.BACKGROUND};
 
-  background-color: ${({ type, theme }) => type === 'pay' ? theme.COLORS.RED : theme.COLORS.GREEN};
+  background-color: ${({ type, theme }) => type === 'paid' ? theme.COLORS.RED : theme.COLORS.GREEN};
 `;

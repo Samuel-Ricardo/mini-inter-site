@@ -1,11 +1,11 @@
 declare module '@Types/models' {
   export interface statement {
     user: {
-      first_name: string,
-      last_name: string
+      firstName: string,
+      lastName: string
     },
     value: number,
-    type: 'pay' | 'received',
+    type: 'paid' | 'received',
     updatedAt: Date
   }
 }
