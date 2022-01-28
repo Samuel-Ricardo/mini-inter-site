@@ -45,7 +45,7 @@ const SingIn = () => {
     <Wrapper>
       <Background image={background_image}/>
 
-      <Card width="403pt">
+      <Card width="403pt" margin={"30"}>
           <img src={Inter_logo} width={172} height={61} alt="inter logo" />
 
           <InputContainer>
