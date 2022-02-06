@@ -98,3 +98,39 @@ This site is part of a full-stack project that aims to make a small project of a
 > Among Others...
 <br>
 <br>
+	
+<h2 id='run-project'> 👨‍💻 How to use </h2>
+
+
+### Open Your Git Terminal and Clone This Repositore:
+
+  ```git
+  
+  $ git clone "https://github.com/Samuel-Ricardo/mini-inter-site"
+  
+  ```
+  
+### Make pull:
+
+  ```git
+  
+  $ git pull "https://github.com/Samuel-Ricardo/mini-inter-site"
+  
+  ```
+	
+You need to have `node.js` in your machine and a package manager (`npm` or `yarn`) to interpret the code and install the dependencies.
+
+```bash
+# To install all the dependencies
+$ yarn
+
+# To run the project
+$ yarn start
+```
+
+You also need to install the React library, click on the image below.
+
+ > <a href='https://reactjs.org/docs/create-a-new-react-app.html'> <img width='40px' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg'> </a>
+
+
+</br>
