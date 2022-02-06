@@ -78,27 +78,39 @@ This site is part of a full-stack project that aims to make a small project of a
 - ReactJS
 - Styled Components
 - Theme scheme
--	react-router-dom
+- react-router-dom
 - route scheme
 - TSX
 - TypeScript
 - Context Provider
--	React Hooks
+- React Hooks
 - Axios
 - Consume API
 - Clean code
--	Functional Programming
+- Functional Programming
 - Asynchronous Functions
 - date-fns
 - HTML
 - CSS
--	UseEffect 
+- UseEffect 
 - UseState
 
 > Among Others...
 <br>
 <br>
-	
+
+<h2 id="app">
+   📱 Application
+</h2>
+
+<h3> Initial Screen </h3>
+  
+ > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login - [1].jpeg'/>
+
+<p>
+  The initial screen that introduces the App, is too the login screen that can redirect tha user to signup.
+</p>	
+
 <h2 id='run-project'> 👨‍💻 How to use </h2>
 
 
