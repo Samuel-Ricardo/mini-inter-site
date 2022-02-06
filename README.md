@@ -68,4 +68,33 @@ This site is part of a full-stack project that aims to make a small project of a
 
 <br>
 <br>
+	
 #
+	
+<h2 id="techs">
+  :building_construction: Technologies and Concepts Studied
+</h2>
+
+- ReactJS
+- Styled Components
+- Theme scheme
+-	react-router-dom
+- route scheme
+- TSX
+- TypeScript
+- Context Provider
+-	React Hooks
+- Axios
+- Consume API
+- Clean code
+-	Functional Programming
+- Asynchronous Functions
+- date-fns
+- HTML
+- CSS
+-	UseEffect 
+- UseState
+
+> Among Others...
+<br>
+<br>
