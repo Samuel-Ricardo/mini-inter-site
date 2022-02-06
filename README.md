@@ -39,3 +39,16 @@
 
 <br>
 
+<p align="center" id="project">Inter is a Brazilian fintech, with the main function of a 100% digital bank with a 100% tariff free digital account, in addition to being a bank, it has investment, insurance, online shopping platforms, among others, all within a super App.
+
+This API is part of a full-stack project that aims to make a small project of a mini bank based on Inter, with account registration, transfer via pix, transfer history and among others.
+	
+#
+   
+Site - <a href="http://mini-inter.vercel.app/">Mini Inter</a>
+
+Repo [backend] - <a href="https://github.com/Samuel-Ricardo/mini-inter_api">Mini Inter API</a>
+   
+This Site is hosted on <a href='http://mini-inter.vercel.app/'> Vercel </a> 
+  
+#
