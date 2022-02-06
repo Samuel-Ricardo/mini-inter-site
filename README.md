@@ -55,7 +55,7 @@ This site is part of a full-stack project that aims to make a small project of a
 #
   
   > <a href='http://mini-inter.vercel.app/ '>
-  <img width='500px' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard.jpeg'>
+  <img width='550px' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard.jpeg'>
  </a>
 
 - Repo [backend] - <a href="https://github.com/Samuel-Ricardo/mini-inter_api">Mini Inter API</a>
@@ -108,19 +108,19 @@ This site is part of a full-stack project that aims to make a small project of a
 
 <h3> Initial Screen </h3>
   
- > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login - [1].jpeg'/>
+ > <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login.jpeg'/> <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login - [1].jpeg'/>
 
  > The initial screen that introduces the App, is too the login screen that can redirect tha user to signup.
 
 <br/>
 	
- > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [0].jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [1].jpeg'/>
+ > <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup.jpeg'/> <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [0].jpeg'/> <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [1].jpeg'/>
 
  > The signup screen that register the user in App database, have some features and rules like: confirm password, not register duplicated user, among others...
 
 <br/>
 
- > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard - [1].jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/pix.jpeg'/>
+ > <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard.jpeg'/> <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard - [1].jpeg'/> <img width="400px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/pix.jpeg'/>
 
  > The Dashboard screen is where you can make payments, request payments, and view your transfer history.
 
