@@ -11,7 +11,7 @@
   |&nbsp;&nbsp;
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#techs">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#collab">Collab</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#app">Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#run-project">Run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#author">Author</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
@@ -97,20 +97,28 @@ This site is part of a full-stack project that aims to make a small project of a
 
 > Among Others...
 <br>
-<br>
 
 <h2 id="app">
    📱 Application
 </h2>
 
+- This Site is hosted on <a href='http://mini-inter.vercel.app/'> Vercel </a> 
+
+
+
 <h3> Initial Screen </h3>
   
  > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/login - [1].jpeg'/>
 
-<p>
-  The initial screen that introduces the App, is too the login screen that can redirect tha user to signup.
-</p>	
+ > The initial screen that introduces the App, is too the login screen that can redirect tha user to signup.
 
+<br/>
+	
+ > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [0].jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/signup - [1].jpeg'/>
+
+ > The signup screen that register the user in App database, have some features and rules like: confirm password, not register duplicated user, among others...
+
+<br/>
 <h2 id='run-project'> 👨‍💻 How to use </h2>
 
 
