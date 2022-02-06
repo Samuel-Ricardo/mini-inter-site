@@ -134,3 +134,31 @@ You also need to install the React library, click on the image below.
 
 
 </br>
+
+	
+<h2 id='author'> :octocat: Author </h2>
+
+ > <a href='https://www.linkedin.com/in/samuel-ricardo-cabral/'> <img width='400px' src='https://github.com/Samuel-Ricardo/BioMisa-Site/blob/master/readme_files/Samuel-Card.jpeg'> </br> <p><b>   Samuel Ricardo</b></p> </a>
+
+
+<h1>
+  <a herf='https://github.com/Samuel-Ricardo'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=GITHUB'> 
+  </a>
+  
+  <a herf='https://www.instagram.com/samuel_ricardo.ex/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel.ex&color=black&style=for-the-badge&logo=instagram'> 
+  </a>
+  
+  <a herf='https://twitter.com/SamuelR84144340'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=twitter'> 
+  </a>
+  
+   <a herf='https://www.linkedin.com/in/samuel-ricardo-cabral/'>
+    <img src='https://img.shields.io/static/v1?label=&message=Samuel%20Ricardo&color=black&style=for-the-badge&logo=LinkedIn'> 
+  </a>
+</h1>
+
+
+
+</br>
