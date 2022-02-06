@@ -45,7 +45,7 @@
 <h2> :artificial_satellite: About </h2>
 
  <p align="justfy">
-Inter is a Brazilian fintech, with the main function of a 100% digital bank with a 100% tariff free digital account, in addition to being a bank, it has investment, insurance, online shopping platforms, among others, all within a super App. 
+Inter is a :brazil: Brazilian :brazil:  fintech, with the main function of a 100% digital bank with a 100% tariff free digital account, in addition to being a bank, it has investment, insurance, online shopping platforms, among others, all within a super App. 
 
 This site is part of a full-stack project that aims to make a small project of a mini bank based on Inter, with account registration, transfer via pix, transfer history, among other features.
 </p>
