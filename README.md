@@ -119,6 +119,13 @@ This site is part of a full-stack project that aims to make a small project of a
  > The signup screen that register the user in App database, have some features and rules like: confirm password, not register duplicated user, among others...
 
 <br/>
+
+ > <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard.jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/dashboard - [1].jpeg'/> <img width="300px"  align='center' src='https://github.com/Samuel-Ricardo/mini-inter-site/blob/master/readme_files/pix.jpeg'/>
+
+ > The Dashboard screen is where you can make payments, request payments, and view your transfer history.
+
+<br/>
+
 <h2 id='run-project'> 👨‍💻 How to use </h2>
 
 
