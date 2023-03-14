@@ -34,7 +34,7 @@
   </a>
       
   <a href="https://web.digitalinnovation.one/users/samuelricardoofficial?tab=achievements">
-    <img alt="DIO" src="https://url.gratis/i5PyNS">
+    <img alt="DIO" src="https://user-images.githubusercontent.com/63983021/224881002-d18e94b6-9c20-4b0f-855e-1ab0bc248d87.png">
   </a>
 </h1>
 
